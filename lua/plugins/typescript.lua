@@ -12,24 +12,24 @@ return {
                 includeInlayEnumMemberValueHints = true,
                 includeInlayFunctionLikeReturnTypeHints = true,
                 includeInlayFunctionParameterTypeHints = true,
-                includeInlayParameterNameHints = 'all',
+                includeInlayParameterNameHints = "all",
                 includeInlayParameterNameHintsWhenArgumentMatchesName = true, -- false
                 includeInlayPropertyDeclarationTypeHints = true,
                 includeInlayVariableTypeHints = true,
-                includeInlayVariableTypeHintsWhenTypeMatchesName = true -- false
-              }
+                includeInlayVariableTypeHintsWhenTypeMatchesName = true, -- false
+              },
             },
             javascript = {
               inlayHints = {
                 includeInlayEnumMemberValueHints = true,
                 includeInlayFunctionLikeReturnTypeHints = true,
                 includeInlayFunctionParameterTypeHints = true,
-                includeInlayParameterNameHints = 'all',
+                includeInlayParameterNameHints = "all",
                 includeInlayParameterNameHintsWhenArgumentMatchesName = true,
                 includeInlayPropertyDeclarationTypeHints = true,
                 includeInlayVariableTypeHints = true,
-                includeInlayVariableTypeHintsWhenTypeMatchesName = true
-              }
+                includeInlayVariableTypeHintsWhenTypeMatchesName = true,
+              },
             },
           },
         },
@@ -42,6 +42,6 @@ return {
     cmd = "TSC",
     keys = {
       { "<leader>tc", "<cmd>TSC<cr>", desc = "Type-check" },
-    }
-  }
+    },
+  },
 }

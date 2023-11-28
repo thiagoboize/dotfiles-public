@@ -5,7 +5,7 @@ return {
       enable = true,
       include_declaration = false, -- Reference include declaration
       sections = { -- Enable / Disable specific request
-        definition = false,
+        definition = true,
         references = true,
         implementation = true,
       },
