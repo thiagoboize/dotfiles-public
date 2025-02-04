@@ -26,7 +26,14 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.util.mini-hipatterns" },
     { import = "lazyvim.plugins.extras.coding.yanky" },
     { import = "lazyvim.plugins.extras.editor.mini-files" },
+    {
+      "nvim-telescope/telescope.nvim",
+      tag = "0.1.8",
+      dependencies = { "nvim-lua/plenary.nvim" },
+    },
     -- import/override with your plugins
+    --
+    --
     { import = "plugins" },
   },
   defaults = {

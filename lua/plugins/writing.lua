@@ -10,15 +10,15 @@ return {
   {
     "jose-elias-alvarez/null-ls.nvim",
     opts = function(_, opts)
-      local nls = require("null-ls")
-      opts.sources = vim.list_extend(opts.sources, {
-        nls.builtins.diagnostics.proselint,
-        nls.builtins.code_actions.proselint,
-        nls.builtins.diagnostics.alex,
-        nls.builtins.diagnostics.write_good,
-      })
+        local null_ls = require("null-ls")
+        opts.sources = vim.list_extend(opts.sources or {}, { -- Use opts.sources ou uma lista vazia
+            null_ls.builtins.diagnostics.proselint,  -- Proselint para diagnósticos
+            null_ls.builtins.code_actions.proselint, -- Ações de código do Proselint
+            null_ls.builtins.diagnostics.alex,       -- Alex para diagnósticos
+            null_ls.builtins.diagnostics.write_good, -- Write-good para verificar estilo de escrita
+        })
     end,
-  },
+}
   {
     "stevearc/conform.nvim",
     optional = true,

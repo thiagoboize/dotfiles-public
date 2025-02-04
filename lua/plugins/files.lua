@@ -13,5 +13,10 @@ return {
     },
     dependencies = { "nvim-tree/nvim-web-devicons" },
   },
+  {
+    "ibhagwan/fzf-lua",
+    dependencies = { "nvim-tree/nvim-web-devicons" },  -- ou "echasnovski/mini.icons", se preferir
+    opts = {},
+  },
 }
 
