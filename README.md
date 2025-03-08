@@ -6,3 +6,9 @@ Refer to the [documentation](https://lazyvim.github.io/installation) to get star
 To get started, install Neovim and use the command below to download my configs.
 
 git clone git@github.com:thiagoboize/dotfiles-public.git ~/.config/nvim
+
+Tools you may need to install to prevent some plugin errors
+```
+sudo apt install fzf xclip xsel
+```
+
