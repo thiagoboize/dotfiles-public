@@ -3,8 +3,8 @@ return {
     "VidocqH/lsp-lens.nvim",
     opts = {
       enable = true,
-      include_declaration = false, -- Reference include declaration
-      sections = { -- Enable / Disable specific request
+      include_declaration = false,
+      sections = {
         definition = true,
         references = true,
         implementation = true,
@@ -21,5 +21,13 @@ return {
       { "<leader>uo", "<cmd>OutputPanel<cr>", desc = "Toggle LSP output" },
     },
     config = true,
+  },
+  {
+    "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        tsserver = {},
+      },
+    },
   },
 }
